@@ -1,0 +1,9 @@
+.header {
+    font-family: "Bebas Neue";
+    color: white;
+    letter-spacing: 0.5rem; 
+    font-size: 6rem;
+    filter : drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+    position: absolute;
+    top: calc(45%-6rem);
+}   
