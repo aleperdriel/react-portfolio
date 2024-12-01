@@ -13,7 +13,10 @@ export default function Home() {
     <div>
       <main>
         <Hero></Hero>
-        <Section title="Skills" className="mt-12 flex flex-col w-full items-center">
+        <Section id="about" title="About me">
+
+        </Section>
+        <Section id="projects" title="Projects" className="mt-12 flex flex-col w-full items-center">
           <ListCard image={firstImg}></ListCard>
           <ListCard image={firstImg} className="flex-row-reverse"></ListCard>
           <ListCard image={firstImg}></ListCard>
