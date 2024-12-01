@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #FFFCF3;
   --foreground: #171717;
 }
 /* 
@@ -43,4 +43,18 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+/* Banner text animation */
+@keyframes infiniteScroll {
+  from {transform: translateX(0) }
+  to {transform: translateX(calc(0px - 50%));}
+}
+.banner-items {
+  animation-name: infiniteScroll;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 6s;
+
 }

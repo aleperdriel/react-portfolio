@@ -1,30 +1,36 @@
+"use client"
 import Image from "next/image";
-import styles from "./page.module.css";
-import { Bebas_Neue } from 'next/font/google';
-import Header from './/components/Header';
+import firstImg from "./image2.jpg";
 import Hero from './/components/Hero';
+import ListCard from "./components/ListCard";
 import 'tailwindcss/tailwind.css'
 import "./globals.css"
 import { Section } from "./components/Section";
-
-
-const bebasNeue = Bebas_Neue({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: "400"
-})
-
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
-      <Header></Header>
-      <Hero></Hero>
-      <Section className="text-blue-50">
-        <h2>yuooo</h2>
-      </Section>
+      <main>
+        <Hero></Hero>
+        <Section title="Skills" className="mt-12 flex flex-col w-full items-center">
+          <ListCard image={firstImg}></ListCard>
+          <ListCard image={firstImg} className="flex-row-reverse"></ListCard>
+          <ListCard image={firstImg}></ListCard>
+          <ListCard image={firstImg} className="flex-row-reverse"></ListCard>
+        </Section>
+        
 
+      </main>
+      <Link href='contact'>
 
+        {/* Scrolling banner */}
+        <div className="flex gap-0 bg-contact_bg w-full bg-cover bg-center h-[700px] py-80 text-center cursor-arrow">
+          <p className="banner-items whitespace-nowrap block text-9xl text-white font-bebas">LET'S GET IN TOUCH<span className="w-8 h-8 rounded-full mx-3 my-7 inline-block bg-orange-600"></span>LET'S GET IN TOUCH<span className="w-8 h-8 rounded-full mx-3 my-7 inline-block bg-orange-600"></span></p>
+          <p className="banner-items whitespace-nowrap block text-9xl text-white font-bebas">LET'S GET IN TOUCH<span className="w-8 h-8 rounded-full mx-3 my-7 inline-block bg-orange-600"></span>LET'S GET IN TOUCH<span className="w-8 h-8 rounded-full mx-3 my-7 inline-block bg-orange-600"></span></p>
+        </div>
+
+        </Link>
     </div>
 
   );

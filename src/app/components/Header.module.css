@@ -7,3 +7,12 @@
     position: absolute;
     top: calc(45%-6rem);
 }   
+
+
+.nav_item {
+    transition-duration: 0.5s;
+}
+.nav_item:hover {
+    color: orangered;
+    transition-duration: 0.5s;
+}

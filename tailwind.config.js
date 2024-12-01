@@ -8,7 +8,18 @@ module.exports = {
     "./src/app/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero_bg" : "url('/image1.jpg')",
+        "contact_bg" : "url('/contact_bg.png')",
+      },
+      cursor: {
+        'arrow': 'url("/pointer.svg"), auto',
+      },
+      fontFamily: {
+        'bebas' : "Bebas Neue",
+      }
+    },
   },
   plugins: [],
 }
