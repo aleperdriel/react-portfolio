@@ -28,7 +28,7 @@ Welcome to my portfolio! Here you can have a brief preview of my skills, creativ
 ### Prerequisites  
 Make sure you have the following installed:  
 - Node.js  
-- npm or Yarn  
+- npm
 
 ### Installation  
 1. Clone the repository:  
