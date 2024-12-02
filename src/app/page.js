@@ -2,7 +2,7 @@
 import Image from "next/image";
 import firstImg from "./image2.jpg";
 import iopImg from "./banner.jpeg";
-import strappleImg from "./strappleit.avif";
+import strappleImg from "./strappleit.jpg";
 import Hero from './/components/Hero';
 import ListCard from "./components/ListCard";
 import 'tailwindcss/tailwind.css'
